@@ -84,6 +84,14 @@ p:last-child{
 .main-wrap {
   width: 100%;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 1400px) {
   .container {
@@ -379,13 +387,23 @@ p:last-child{
 
 /* ---main-section--- */
 .main-section {
-
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main-section .container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; 
 }
 .main-section__inner {
-
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; 
 }
 
 .main-section__row {
+  flex-grow: 1;
   gap: 20px;
   display: flex;
 }
@@ -407,8 +425,202 @@ p:last-child{
 
 }
 .wt-box {
-  background: #fff;
   padding: 20px;
+  border-radius: 8px;
   margin-bottom: 20px;
+  background: #fff;
 }
 /* ---sidebar---end */
+
+
+/* ---dash__now--- */
+.dash__now {
+  display: flex;
+  flex-direction: column;
+}
+.dash__now__title {
+  margin-bottom: 10px;
+}
+.dash__now__title h2 {
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+}
+.dash__now__pai {
+  display: inline-flex;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5px;
+}
+.dash__now__pai .text-ellipse {
+  height: 74%;
+  width: 74%;
+  font-size: 66px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: var(--theme__color1);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.dash__now__details {
+
+}
+.dash__now__details h4 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  font-weight: 400;
+  color: #9CA3AF;
+  text-align: center;
+}
+.dash__now__details__per {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.pl-mdl {
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: 400;
+  color: #74797E;
+  background: #F9FAFB;
+}
+.pl-mdl .txt {
+
+}
+/* ---dash__now---end */
+
+
+/* ---dash__avr--- */
+.dash__avr {
+
+}
+.dash__avr__title {
+
+}
+.dash__avr__title h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9CA3AF;
+}
+.dash__avr__chart {
+
+}
+.dash__avr__sum {
+	--bs-gutter-x: 12px;
+	margin-top: 10px;
+}
+.avr__sum {
+  padding: 18px 22px;
+  text-align: center;
+  background: #F2F8FF;
+  border-radius: 8px;
+}
+.avr__sum h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--theme__color1);
+}
+.avr__sum p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #878E95;
+}
+/* ---dash__avr---end */
+
+
+/* ---dash__tbl--- */
+.dash__tbl {
+
+}
+
+.dash-table {
+
+}
+.dash-table table {
+
+}
+.dash-table table td {
+  padding: 14px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--theme__color1);
+}
+.dash-table table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid #E7E7E7;
+}
+.dash-table table tbody td:first-child {
+  font-weight: 300;
+  color: var(--color__d3);
+}
+.dash-table table tbody td:last-child{
+  font-weight: 300;
+  color: var(--color__d3);
+}
+.dash-table table thead tr {
+  background: #F2F8FF;
+  border-radius: 4px;
+}
+.dash-table table thead td {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-weight: 400;
+  color: #1F2937;
+}
+/* ---dash__tbl---end */
+
+
+/* ---radial-progress--- */
+
+/* Circumference = 2πr */
+/* π = 3.1415926535898 */
+/* r = 35 */
+
+svg.radial-progress {
+  height: auto;
+  max-width: 206px;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; /* Circumference */
+  stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+
+svg.radial-progress text {
+  fill: #fff;
+  font: 400 1em/1 'Oswald', sans-serif;
+  text-anchor: middle;
+  fill: #000;
+}
+
+/*** COLORS ***/
+/* Primary */
+
+svg.radial-progress circle { 
+  stroke: var(--theme__color1); 
+}
+svg.radial-progress circle.incomplete {
+  stroke-width: 1;
+  opacity: 0.1;
+}
+svg.radial-progress circle.complete {
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+/* ---radial-progress---end */

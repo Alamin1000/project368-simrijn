@@ -159,10 +159,31 @@
                   <div class="sidebar__inner">
                     <!-- dash-now -->
                     <div class="wt-box dash__now">
-                      <div class="dash-now__title">
+                      <div class="dash__now__title">
                         <h2 class="mb-0">Right Now</h2>
                       </div>
-                      <div class="dash__now__pai"></div>
+                      <div class="dash__now__pai">
+                        <svg
+                          class="radial-progress"
+                          data-percentage="82"
+                          viewBox="0 0 80 80"
+                        >
+                          <circle
+                            class="incomplete"
+                            cx="40"
+                            cy="40"
+                            r="35"
+                          ></circle>
+                          <circle
+                            class="complete"
+                            cx="40"
+                            cy="40"
+                            r="35"
+                            style="stroke-dashoffset: 39.5841px"
+                          ></circle>
+                        </svg>
+                        <div class="text-ellipse">714</div>
+                      </div>
                       <div class="dash__now__details">
                         <h4>
                           Active users on
@@ -186,13 +207,15 @@
                     <!-- dash-avr -->
                     <div class="wt-box dash__avr">
                       <div class="dash__avr__title">
-                        <h4 class="h4 mb-0">
+                        <h4 class="mb-0">
                           Traffic currently
-                          <span class="color-theme1">Growing Above</span>
+                          <span class="color-theme1 fw-500">Growing Above</span>
                           average
                         </h4>
                       </div>
-                      <div class="dash__avr__chart"></div>
+                      <div class="dash__avr__chart">
+                        <canvas id="myChart"></canvas>
+                      </div>
                       <div class="dash__avr__sum row">
                         <div class="col-4">
                           <div class="avr__sum">
@@ -270,6 +293,7 @@
     <!-- js -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/main.js"></script>
     <!-- End All Js -->
   </body>
