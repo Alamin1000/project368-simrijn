@@ -30,35 +30,6 @@
     <!-- preloader-end -->
     <!-- main-wrap -->
     <div class="main-wrap">
-      <!-- offcanvas-start -->
-      <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
-      </div>
-      <div class="offcanvas-overlay"></div>
-      <!-- offcanvas-start-end -->
-
       <!-- header-section -->
       <header class="header-section">
         <div class="header-in">
@@ -67,7 +38,7 @@
               <a href="index.html" class="heder-logo">
                 <img src="images/logo.svg" alt="" />
               </a>
-              <div class="header-right">
+              <div class="header-right d-md-flex d-none">
                 <div class="dropdown header-language">
                   <a href="#" data-bs-toggle="dropdown">
                     <div class="image">
@@ -143,6 +114,99 @@
                       </li>
                     </ul>
                   </div>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="mobile-menu-button d-md-none collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#mobile-menu"
+              >
+                <img class="hamburger" src="images/hamburger.svg" alt="" />
+                <img class="close-times" src="images/close-times.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-menu d-md-none collapse" id="mobile-menu">
+          <div class="mobile-menu__inner">
+            <div class="mobile-menu-row">
+              <div class="header-profile dropdown user">
+                <a href="#" data-bs-toggle="dropdown">
+                  <div class="image">
+                    <img src="images/Profile.png" alt="" />
+                  </div>
+                  <span class="txt">J Smith</span>
+                  <i class="far fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="head">
+                    <span href="#" class="name">J Smith</span>
+                    <span href="#" class="role">Web designer</span>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fas fa-user"></i>
+                        </span>
+                        <span class="text">My Profile</span>
+                      </a>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fas fa-user-edit"></i>
+                        </span>
+                        <span class="text">Edit Profile</span>
+                      </a>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="far fa-envelope"></i>
+                        </span>
+                        <span class="text">Inbox</span>
+                      </a>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fas fa-cog"></i>
+                        </span>
+                        <span class="text">Setting</span>
+                      </a>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="far fa-question-circle"></i>
+                        </span>
+                        <span class="text">Help</span>
+                      </a>
+                      <a href="#">
+                        <span class="icon">
+                          <i class="fas fa-sign-out-alt"></i>
+                        </span>
+                        <span class="text">Logout</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mobile-menu__right">
+                <div class="dropdown header-language">
+                  <a href="#" data-bs-toggle="dropdown">
+                    <div class="image">
+                      <img src="images/uk.png" alt="" class="img" />
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <ul>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Bangla</a></li>
+                      <li><a href="#">Spanish</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="header-menu">
+                  <a href="#">
+                    <img src="images/notification.svg" alt="" class="img" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -1967,325 +2031,349 @@
 
                           <!-- rc-table -->
                           <div class="rc-table_outer mb-4">
-                            <div class="rc-table-title">
-                              <h4 class="mb-0">
-                                Real-Time Sources for this Page
-                              </h4>
-                            </div>
-                            <div class="rc-table">
-                              <table>
-                                <thead>
-                                  <tr>
-                                    <td>Medium</td>
-                                    <td>Source</td>
-                                    <td>Active Users</td>
-                                    <td>Graph</td>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Social</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <img
-                                            src="images/facebook.png"
-                                            alt=""
-                                            class="img"
-                                          />
+                            <div class="rc-table-in">
+                              <div class="rc-table-title">
+                                <h4 class="mb-0">
+                                  Real-Time Sources for this Page
+                                </h4>
+                              </div>
+                              <div class="rc-table">
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <td>Medium</td>
+                                      <td>Source</td>
+                                      <td>Active Users</td>
+                                      <td>Graph</td>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Social</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <img
+                                              src="images/facebook.png"
+                                              alt=""
+                                              class="img"
+                                            />
+                                          </div>
+                                          <div class="txt">
+                                            <a
+                                              href="#"
+                                              class="color-theme1 fw-400"
+                                            >
+                                              Facebook.com
+                                            </a>
+                                          </div>
                                         </div>
-                                        <div class="txt">
-                                          <a
-                                            href="#"
-                                            class="color-theme1 fw-400"
-                                          >
-                                            Facebook.com
-                                          </a>
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >89 (69%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 100%"
+                                          ></div>
                                         </div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">89 (69%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 100%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>None</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <i class="fal fa-paperclip"></i>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>None</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <i class="fal fa-paperclip"></i>
+                                          </div>
+                                          <div class="txt">
+                                            <a
+                                              href="#"
+                                              class="color-theme1 fw-400"
+                                            >
+                                              (Direct)
+                                            </a>
+                                          </div>
                                         </div>
-                                        <div class="txt">
-                                          <a
-                                            href="#"
-                                            class="color-theme1 fw-400"
-                                          >
-                                            (Direct)
-                                          </a>
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >4 (0.7%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 5%"
+                                          ></div>
                                         </div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">4 (0.7%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 5%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </div>
                           </div>
                           <!-- rc-table-end -->
 
                           <!-- rc-table -->
                           <div class="rc-table_outer">
-                            <div class="rc-table-title">
-                              <h4 class="mb-0">
-                                Visitor Countries on this page
-                              </h4>
-                            </div>
-                            <div class="rc-table">
-                              <table>
-                                <thead>
-                                  <tr>
-                                    <td>Code</td>
-                                    <td>Country</td>
-                                    <td>Active Users</td>
-                                    <td>Graph</td>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>AM</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <img
-                                            src="images/uk.png"
-                                            alt=""
-                                            class="img"
-                                          />
+                            <div class="rc-table-in">
+                              <div class="rc-table-title">
+                                <h4 class="mb-0">
+                                  Visitor Countries on this page
+                                </h4>
+                              </div>
+                              <div class="rc-table">
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <td>Code</td>
+                                      <td>Country</td>
+                                      <td>Active Users</td>
+                                      <td>Graph</td>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>AM</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <img
+                                              src="images/uk.png"
+                                              alt=""
+                                              class="img"
+                                            />
+                                          </div>
+                                          <div class="txt">America</div>
                                         </div>
-                                        <div class="txt">America</div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">89 (69%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 100%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>DE</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <img
-                                            src="images/jarman.png"
-                                            alt=""
-                                            class="img"
-                                          />
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >89 (69%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 100%"
+                                          ></div>
                                         </div>
-                                        <div class="txt">Germany</div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">1 (.0%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 5%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>FR</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <img
-                                            src="images/france.png"
-                                            alt=""
-                                            class="img"
-                                          />
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>DE</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <img
+                                              src="images/jarman.png"
+                                              alt=""
+                                              class="img"
+                                            />
+                                          </div>
+                                          <div class="txt">Germany</div>
                                         </div>
-                                        <div class="txt">Germany</div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">1 (.0%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 5%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>DE</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <img
-                                            src="images/jarman.png"
-                                            alt=""
-                                            class="img"
-                                          />
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >1 (.0%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 5%"
+                                          ></div>
                                         </div>
-                                        <div class="txt">Germany</div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">1 (.0%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 5%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>FR</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <img
-                                            src="images/france.png"
-                                            alt=""
-                                            class="img"
-                                          />
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>FR</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <img
+                                              src="images/france.png"
+                                              alt=""
+                                              class="img"
+                                            />
+                                          </div>
+                                          <div class="txt">Germany</div>
                                         </div>
-                                        <div class="txt">Germany</div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">1 (.0%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 5%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>DE</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <img
-                                            src="images/jarman.png"
-                                            alt=""
-                                            class="img"
-                                          />
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >1 (.0%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 5%"
+                                          ></div>
                                         </div>
-                                        <div class="txt">Germany</div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">1 (.0%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 5%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>FR</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <img
-                                            src="images/france.png"
-                                            alt=""
-                                            class="img"
-                                          />
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>DE</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <img
+                                              src="images/jarman.png"
+                                              alt=""
+                                              class="img"
+                                            />
+                                          </div>
+                                          <div class="txt">Germany</div>
                                         </div>
-                                        <div class="txt">Germany</div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">1 (.0%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 5%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>DE</td>
-                                    <td>
-                                      <div class="country-n">
-                                        <div class="flag">
-                                          <img
-                                            src="images/jarman.png"
-                                            alt=""
-                                            class="img"
-                                          />
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >1 (.0%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 5%"
+                                          ></div>
                                         </div>
-                                        <div class="txt">Germany</div>
-                                      </div>
-                                    </td>
-                                    <td>
-                                      <span class="color-theme1">1 (.0%)</span>
-                                    </td>
-                                    <td>
-                                      <div class="td-fill">
-                                        <div
-                                          class="filled"
-                                          style="width: 5%"
-                                        ></div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <div class="rc-table-foot">
-                              <h4 class="h4 mb-0">
-                                <a href="#" class="color-theme1"
-                                  >Show 5 more countries...</a
-                                >
-                              </h4>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>FR</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <img
+                                              src="images/france.png"
+                                              alt=""
+                                              class="img"
+                                            />
+                                          </div>
+                                          <div class="txt">Germany</div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >1 (.0%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 5%"
+                                          ></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>DE</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <img
+                                              src="images/jarman.png"
+                                              alt=""
+                                              class="img"
+                                            />
+                                          </div>
+                                          <div class="txt">Germany</div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >1 (.0%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 5%"
+                                          ></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>FR</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <img
+                                              src="images/france.png"
+                                              alt=""
+                                              class="img"
+                                            />
+                                          </div>
+                                          <div class="txt">Germany</div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >1 (.0%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 5%"
+                                          ></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>DE</td>
+                                      <td>
+                                        <div class="country-n">
+                                          <div class="flag">
+                                            <img
+                                              src="images/jarman.png"
+                                              alt=""
+                                              class="img"
+                                            />
+                                          </div>
+                                          <div class="txt">Germany</div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <span class="color-theme1"
+                                          >1 (.0%)</span
+                                        >
+                                      </td>
+                                      <td>
+                                        <div class="td-fill">
+                                          <div
+                                            class="filled"
+                                            style="width: 5%"
+                                          ></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="rc-table-foot">
+                                <h4 class="h4 mb-0">
+                                  <a href="#" class="color-theme1"
+                                    >Show 5 more countries...</a
+                                  >
+                                </h4>
+                              </div>
                             </div>
                           </div>
                           <!-- rc-table-end -->

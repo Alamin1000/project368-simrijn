@@ -61,9 +61,6 @@
         font-size: 12px;
     }
 
-    .mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-        width: 9px;
-    }
     .mCSB_inside > .mCSB_container {
         margin-right: 20px;
     }
@@ -72,7 +69,23 @@
 
 
 @media (max-width: 1199px) {
- 
+    .header-in {
+        border-bottom: 1px solid #E7E9EC;
+    }
+    .main-section {
+        padding-top: 20px;
+        background: #fff;
+    }
+    .main-section__row {
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .main-column {
+        flex-grow: 0 !important;
+        width: 100%;
+    }
 }
 
 
@@ -87,10 +100,45 @@
 
 
 @media (max-width: 575px) {
- 
+    .main-section .container {
+        padding: 0;
+    }
+    .sidebar {
+        border-radius: 0;
+    }
+
+    .filter-title {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .filter-button {
+        width: 100%;
+    }
+    .filter-nav {
+        flex-grow: 1;
+    }
+    .filter-nav ul {
+        gap: 6px;
+    }
+    .filter-nav ul li {
+        flex-grow: 1;
+    }
+
+
+    .user .dropdown-menu::before {
+        left: 10px;
+        right: unset;
+    }
 }
 
 
-@media (max-width: 390px) {
- 
+@media (max-width: 370px) {
+    .dash__now__details__per {
+        padding: 0;
+    }
+
+    .ct-tp-title {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }

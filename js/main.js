@@ -133,7 +133,8 @@ $(function () {
 $(".custom-scrollbar").mCustomScrollbar({
   scrollButtons: { enable: true },
   theme: "dark-thick",
-  scrollbarPosition: "outside",
+  axis: "yx",
+  scrollbarPosition: "inside",
   mouseWheelPixels: 50,
   scrollInertia: 50,
   scrollbarPosition: "inside",
