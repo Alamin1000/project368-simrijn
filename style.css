@@ -748,6 +748,14 @@ svg.radial-progress circle.complete {
   font-size: 16px;
   margin-bottom: 2px;
   font-weight: 400;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  transition: .3s ease;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .pro-item__main__cont p {
   font-size: 14px;
@@ -844,6 +852,7 @@ svg.radial-progress circle.complete {
 .sim-table table {
   border-spacing: 0 12px;
   border-collapse: separate;
+  table-layout: unset;
 }
 .sim-table tr {
   border-radius: 4px;
@@ -870,6 +879,7 @@ svg.radial-progress circle.complete {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 } 
 .country-n .flag img {
   height: 100%;
