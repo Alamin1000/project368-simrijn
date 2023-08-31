@@ -100,7 +100,8 @@
 
 
 @media (max-width: 575px) {
-    .main-section .container {
+    .main-section .container,
+    .main-section .container-fluid {
         padding: 0;
     }
     .sidebar {
