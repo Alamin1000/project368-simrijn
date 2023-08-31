@@ -1,6 +1,6 @@
 
 
-@media (max-width: 1399px) {
+@media (max-width: 1999px) {
     body {
         font-size: 14px;
     }
@@ -65,6 +65,17 @@
         margin-right: 20px;
     }
 
+
+    .sidebar {
+        max-height: initial;
+    }
+    .pro-items__wrap {
+        height: 580px;
+        overflow: auto;
+    }
+    .sim-table {
+        height: 290px;
+    }
 }
 
 

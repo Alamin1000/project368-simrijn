@@ -23,6 +23,22 @@
       $(".offcanvas-overlay").removeClass("active");
     }
   });
+
+  // header
+  var wind = $(window);
+  var sticky = $(".header-section");
+  wind.on("scroll", function () {
+    var scroll = wind.scrollTop();
+    if (scroll < 5) {
+      sticky.removeClass("sticky");
+    } else {
+      sticky.addClass("sticky");
+    }
+  });
+  $(window).on("load resize", function () {
+    $(".header-section").height($(".header-in").outerHeight());
+    $("body").css("--header-height", $(".header-in").outerHeight() + "px");
+  });
 })(jQuery);
 
 $(document).ready(function () {
